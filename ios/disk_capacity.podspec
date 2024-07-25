@@ -4,7 +4,7 @@
 #
 Pod::Spec.new do |s|
   s.name             = 'disk_capacity'
-  s.version          = '0.0.1'
+  s.version          = '1.0.1'
   s.summary          = 'A Flutter plugin for getting disk information.'
   s.description      = <<-DESC
 A Flutter plugin for getting disk information.

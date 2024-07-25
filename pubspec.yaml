@@ -1,6 +1,6 @@
 name: disk_capacity
 description: "A Flutter package to get information about the disk capacity of Android and iOS devices."
-version: 1.0.0
+version: 1.0.1
 repository: https://github.com/RaphaelKoschig/disk_capacity
 
 environment:
