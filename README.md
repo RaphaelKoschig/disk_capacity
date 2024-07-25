@@ -26,11 +26,11 @@ flutter pub get
 import 'package:disk_capacity/disk_capacity.dart';
 
 void main() async {
-    final DiskCapacity = DiskCapacity();
-    double freeSpace = await DiskCapacity.getFreeDiskSpace();
-    double totalSpace = await DiskCapacity.getTotalDiskSpace();
-    double freeSpaceForPath = await DiskCapacity.getFreeDiskSpaceForPath('/path/to/directory');
-    double totalSpaceForPath = await DiskCapacity.getTotalDiskSpaceForPath('/path/to/directory');
+    final DiskCapacity diskCapacity = DiskCapacity();
+    double freeSpace = await diskCapacity.getFreeDiskSpace();
+    double totalSpace = await diskCapacity.getTotalDiskSpace();
+    double freeSpaceForPath = await diskCapacity.getFreeDiskSpaceForPath('/path/to/directory');
+    double totalSpaceForPath = await diskCapacity.getTotalDiskSpaceForPath('/path/to/directory');
 
     print('Free space: $freeSpace MB');
     print('Total space: $totalSpace MB');

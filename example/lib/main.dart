@@ -19,7 +19,7 @@ class _MyAppState extends State<MyApp> {
   double _freeDiskSpace = 0.0;
   double _totalDiskSpace = 0.0;
   String _error = '';
-  final _DiskCapacityPlugin = DiskCapacity();
+  final _diskCapacityPlugin = DiskCapacity();
 
   @override
   void initState() {
@@ -32,8 +32,8 @@ class _MyAppState extends State<MyApp> {
     double totalDiskSpace = 0.0;
 
     try {
-      freeDiskSpace = await _DiskCapacityPlugin.getFreeDiskSpace();
-      totalDiskSpace = await _DiskCapacityPlugin.getTotalDiskSpace();
+      freeDiskSpace = await _diskCapacityPlugin.getFreeDiskSpace();
+      totalDiskSpace = await _diskCapacityPlugin.getTotalDiskSpace();
     } on PlatformException {
       setState(() {
         _error = 'Failed to get disk space.';

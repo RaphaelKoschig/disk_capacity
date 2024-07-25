@@ -28,34 +28,34 @@ void main() {
   });
 
   test('getFreeDiskSpace', () async {
-    DiskCapacity DiskCapacityPlugin = DiskCapacity();
+    DiskCapacity diskCapacity = DiskCapacity();
     MockDiskCapacityPlatform fakePlatform = MockDiskCapacityPlatform();
     DiskCapacityPlatform.instance = fakePlatform;
 
-    expect(await DiskCapacityPlugin.getFreeDiskSpace(), 42.0);
+    expect(await diskCapacity.getFreeDiskSpace(), 42.0);
   });
 
   test('getTotalDiskSpace', () async {
-    DiskCapacity DiskCapacityPlugin = DiskCapacity();
+    DiskCapacity diskCapacity = DiskCapacity();
     MockDiskCapacityPlatform fakePlatform = MockDiskCapacityPlatform();
     DiskCapacityPlatform.instance = fakePlatform;
 
-    expect(await DiskCapacityPlugin.getTotalDiskSpace(), 42.0);
+    expect(await diskCapacity.getTotalDiskSpace(), 42.0);
   });
 
   test('getFreeDiskSpaceForPath', () async {
-    DiskCapacity DiskCapacityPlugin = DiskCapacity();
+    DiskCapacity diskCapacity = DiskCapacity();
     MockDiskCapacityPlatform fakePlatform = MockDiskCapacityPlatform();
     DiskCapacityPlatform.instance = fakePlatform;
 
-    expect(await DiskCapacityPlugin.getFreeDiskSpaceForPath('path'), 42.0);
+    expect(await diskCapacity.getFreeDiskSpaceForPath('path'), 42.0);
   });
 
   test('getTotalDiskSpaceForPath', () async {
-    DiskCapacity DiskCapacityPlugin = DiskCapacity();
+    DiskCapacity diskCapacity = DiskCapacity();
     MockDiskCapacityPlatform fakePlatform = MockDiskCapacityPlatform();
     DiskCapacityPlatform.instance = fakePlatform;
 
-    expect(await DiskCapacityPlugin.getTotalDiskSpaceForPath('path'), 42.0);
+    expect(await diskCapacity.getTotalDiskSpaceForPath('path'), 42.0);
   });
 }
