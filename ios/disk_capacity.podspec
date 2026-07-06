@@ -4,7 +4,7 @@
 #
 Pod::Spec.new do |s|
   s.name             = 'disk_capacity'
-  s.version          = '1.0.1'
+  s.version          = '1.2.0'
   s.summary          = 'A Flutter plugin for getting disk information.'
   s.description      = <<-DESC
 A Flutter plugin for getting disk information.
@@ -14,7 +14,8 @@ Especially useful for iOS to get the free and total space on the device.
   s.license          = { :file => '../LICENSE' }
   s.author           = { 'Koschig Raphaël' => 'raphael.koschig@gmail.com' }
   s.source           = { :path => '.' }
-  s.source_files = 'Classes/**/*'
+  s.source_files = 'disk_capacity/Sources/disk_capacity/**/*.swift'
+  s.resource_bundles = {'disk_capacity_privacy' => ['disk_capacity/Sources/disk_capacity/PrivacyInfo.xcprivacy']}
   s.dependency 'Flutter'
   s.platform = :ios, '12.0'
 

@@ -1,3 +1,11 @@
+## 1.2.0
+
+* Adds Swift Package Manager support on iOS (CocoaPods remains supported)
+* Adds a privacy manifest (`PrivacyInfo.xcprivacy`) declaring the disk space required reason APIs used by the plugin
+* Regenerates the example app's iOS project with the latest Flutter template
+* Updates README with platform support and privacy manifest details
+
+
 ## 1.1.0
 
 * Migrates the Android build to Flutter's built-in Kotlin support (AGP 9 / Flutter 3.44+)
